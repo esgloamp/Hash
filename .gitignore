@@ -1,0 +1,7 @@
+*.txt
+*.spec
+
+.idea/
+.vscode/
+__pycache__/
+dist/
