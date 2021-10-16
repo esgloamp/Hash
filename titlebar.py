@@ -19,14 +19,14 @@ class TitleBar(QWidget):
 
     def init_ui(self):
         self.labelicon = QLabel()
-        self.labelicon.setPixmap(QPixmap("./icon32.png"))
+        self.labelicon.setPixmap(QPixmap("./assets/icon32.png"))
         self.labeltitle = QLabel()
         self.labeltitle.setText("Hash By NZP")
         self.labelclose = ClickableLabel()
-        self.labelclose.setPixmap(QPixmap("./close.png"))
+        self.labelclose.setPixmap(QPixmap("./assets/close.png"))
         self.labelclose.clicked.connect(lambda: QApplication.exit())
         self.labelmin = ClickableLabel()
-        self.labelmin.setPixmap(QPixmap("./min.png"))
+        self.labelmin.setPixmap(QPixmap("./assets/min.png"))
         self.labelmin.clicked.connect(lambda: self.parent.showMinimized())
 
         lay = QHBoxLayout()
