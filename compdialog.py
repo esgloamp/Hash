@@ -34,11 +34,12 @@ class CompDialog(QDialog):
         self.setContentsMargins(0, 0, 0, 0)
 
     def conn(self):
+        # 意思是，每当任意文本框的文本发生改变，则调用compare函数
         self.lineedit1.textChanged.connect(self.compare)
         self.lineedit2.textChanged.connect(self.compare)
 
     def compare(self):
-        print('hello')
+        # 如果文本框内容相同，则提示相等
         if self.lineedit1.text() == self.lineedit2.text():
             self.info.setStyleSheet("color: green")
             self.info.setText("相等")
