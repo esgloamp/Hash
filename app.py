@@ -15,10 +15,6 @@ if __name__ == "__main__":
         mainwindow.setWindowTitle("Hash By NZP")
         mainwindow.setWindowIcon(QIcon("./assets/icon.png"))
         mainwindow.show()  # 窗口可见
-    except Exception as e:
-        print(e)
-
-    try:
         sys.exit(app.exec_())  # 开始执行应用
     except Exception as e:
         print(e)
