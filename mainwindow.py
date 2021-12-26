@@ -239,7 +239,7 @@ class MainWindow(QWidget):
             print(currtime)
             savefile.write("*" * 55 + "\n")
             savefile.write(
-                f"This file is created by hashes when {currtime}\n")
+                f"This file was created by hashes on {currtime}\n")
             savefile.write("*" * 55 + "\n\n\n")
             a = savefile.write(self.textedit.toPlainText())
             print(a)
